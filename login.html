@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – CropAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-green-50 flex items-center justify-center h-screen">
+
+  <div class="card w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">🔑 Login to CropAI</h2>
+    <form id="login-form" class="space-y-4">
+      <input type="text" id="login-username" placeholder="Username" class="w-full p-3 border rounded-lg" required>
+      <input type="password" id="login-password" placeholder="Password" class="w-full p-3 border rounded-lg" required>
+      <button type="submit" class="button button-primary w-full">Login</button>
+    </form>
+    <p class="mt-4 text-sm text-center">
+      Don’t have an account? <a href="register.html" class="text-green-700 font-semibold">Register</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

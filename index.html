@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CropAI – Smart Farming Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-green-900 text-white shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">🌱 CropAI</h1>
+      <ul class="hidden md:flex items-center space-x-4">
+        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+        <li><a href="register.html" class="hover:text-green-300">Register</a></li>
+        <li><a href="login.html" class="hover:text-green-300">Login</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 bg-green-800 p-4 text-center md:hidden">
+      <a href="index.html" class="hover:text-green-300">Home</a>
+      <a href="register.html" class="hover:text-green-300">Register</a>
+      <a href="login.html" class="hover:text-green-300">Login</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-green-100 via-green-50 to-green-200 pt-20 animate-fade-in relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-500/20 animate-pulse"></div>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80" alt="Farm field" class="absolute inset-0 w-full h-full object-cover opacity-30 -z-10" />
+    <div class="relative z-10 max-w-4xl px-4">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-green-900 mb-4 animate-bounce drop-shadow-lg">AI-Powered Crop Prediction</h2>
+      <p class="text-xl text-gray-700 max-w-2xl mb-8 leading-relaxed drop-shadow-md">
+        Boost productivity with real-time insights, crop monitoring, and yield forecasting. Revolutionize your farming with cutting-edge AI technology.
+      </p>
+      <div class="mt-6 space-x-4">
+        <a href="register.html" class="button button-primary">Get Started</a>
+        <a href="login.html" class="button button-primary">Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="container mx-auto py-16 px-6">
+    <h3 class="text-2xl font-bold text-center mb-10">🚀 Key Features</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card hover-card text-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" tabindex="0" role="button" aria-pressed="false" aria-label="Real-Time Monitoring feature">
+        <h4 class="font-bold text-lg mb-2">Real-Time Monitoring</h4>
+        <p class="text-gray-600">Track crop health with satellite imagery and AI analysis.</p>
+      </div>
+      <div class="card hover-card text-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" tabindex="0" role="button" aria-pressed="false" aria-label="Yield Forecasting feature">
+        <h4 class="font-bold text-lg mb-2">Yield Forecasting</h4>
+        <p class="text-gray-600">Predict harvest yields based on weather and soil data.</p>
+      </div>
+      <div class="card hover-card text-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" tabindex="0" role="button" aria-pressed="false" aria-label="Smart Recommendations feature">
+        <h4 class="font-bold text-lg mb-2">Smart Recommendations</h4>
+        <p class="text-gray-600">Get personalized advice for optimal farming practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crop Images Section -->
+  <section class="container mx-auto py-16 px-6 bg-gradient-to-r from-green-50 to-green-100">
+    <h3 class="text-2xl font-bold text-center mb-10">🌾 Featured Crops</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.0_oXEQ_UDr3WxBL246yDcwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wheat" class="rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition animate-fade-in stagger-1">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.I2Ydlhs0wr3ajvaS51RxUAHaE6?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Rice" class="rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition animate-fade-in stagger-2">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.GIfWDRQYtGJAhQlxR6p3BwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Maize" class="rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition animate-fade-in stagger-3">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container mx-auto py-16 px-6 bg-gradient-to-r from-green-50 to-green-100">
+    <h3 class="text-2xl font-bold text-center mb-10">💬 What Farmers Say</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card hover-card">
+        <p class="text-gray-600 mb-4 italic text-lg leading-relaxed">“CropAI helped me increase my yield by 20% with accurate predictions.”</p>
+        <p class="font-semibold text-green-800">- John Doe, Wheat Farmer</p>
+      </div>
+      <div class="card hover-card">
+        <p class="text-gray-600 mb-4 italic text-lg leading-relaxed">“The real-time monitoring saved me from crop loss during drought.”</p>
+        <p class="font-semibold text-green-800">- Jane Smith, Rice Farmer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yield Prediction -->
+  <section class="container mx-auto py-16 px-6 bg-gradient-to-r from-white to-green-50 shadow-md rounded-2xl">
+    <h3 class="text-2xl font-bold text-center mb-6">📊 Yield Prediction Trends</h3>
+    <canvas id="yieldChart" class="h-64"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-6 text-center mt-16">
+    <p>&copy; 2025 CropAI. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
